@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hybrid Crypto Chat & File Share (WebSocket relay)</title>
+  <link rel="icon" type="image/png" href="cns.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Hybrid Crypto Chat & File Share</h1></header>
+
+  <main class="container">
+    <section class="left">
+      <div class="card">
+        <label>Username
+          <input id="username"/>
+        </label>
+        <div class="controls">
+          <button id="btn-register">Register</button>
+          <button id="btn-gen-keys">Generate RSA Keypair (client)</button>
+          <button id="btn-export-pub" disabled></button>
+        </div>
+
+        <label>Reciever
+          <input id="peer" placeholder="Recipient username"/>
+        </label>
+        <div class="controls">
+          <button id="btn-send-pub">Send my public key</button>
+        </div>
+
+        <hr/>
+
+        <label>Message
+          <input id="msg" placeholder="Type message to send"/>
+        </label>
+        <div class="controls">
+          <button id="btn-send-msg">Encrypt & Send Text</button>
+        </div>
+
+        <hr/>
+
+        <label>Send File
+          <input type="file" id="fileinput"/>
+        </label>
+        <div class="controls">
+          <button id="btn-send-file">Encrypt & Send File</button>
+        </div>
+
+        <div id="system" class="system"></div>
+      </div>
+    </section>
+
+    <section class="right">
+      <div class="card">
+        <h3><b>CHAT</b></h3>
+        <div id="incoming" class="log"></div>
+
+        <h3>Outgoing (Encrypted)</h3>
+        <div id="outgoing" class="log"></div>
+
+        <h3>Public Keys (Received)</h3>
+        <div id="peers" class="log"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="client.js"></script>
+</body>
+</html>

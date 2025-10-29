@@ -1,0 +1,13 @@
+{
+  "name": "hybrid-crypto-webapp",
+  "version": "1.0.0",
+  "description": "Hybrid cryptography demo with WebSocket relay — AES (data) + RSA-OAEP (wrap key) — chat + file sharing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.13.0"
+  }
+}

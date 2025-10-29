@@ -1,0 +1,73 @@
+body{
+    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto; 
+    margin:0;
+    background:hsla(0, 0%, 0%, 0.934);
+    color:#a4b0be
+}
+header{
+    padding:16px;
+    background:hsl(0, 89%, 22%);
+}
+.container{
+    display:flex;
+    gap:16px;
+    padding:18px
+}
+.card{
+    background:hsla(0, 94%, 19%, 0.03);
+    padding:14px;
+    border-radius:10px;
+    box-shadow:0 9px 27px hsl(0, 88%, 17%);;
+}
+.left{
+    flex:1
+}
+.right{
+    flex:1
+}
+label{
+    display:block;
+    margin-bottom:8px;
+    color:#9aa6b2
+}
+input[type="text"], input[type="file"], input{
+    width:100%;
+    padding:8px;
+    border-radius:6px;
+    border:1px solid rgba(255,255,255,0.04);
+    background:rgba(255,255,255,0.02);
+    color:#ffffff
+}
+.controls{
+    display:flex;
+    gap:8px;
+    margin:8px 0;
+    flex-wrap:wrap;
+}
+button{
+    background:linear-gradient(90deg,hsl(0, 100%, 50%),#610101);
+    border:none;
+    padding:8px 10px;
+    border-radius:8px;
+    color:#807575;
+    font-weight:700;
+    cursor:pointer;
+}
+.log{
+    max-height:360px;
+    overflow:auto;
+    padding:8px;
+    background:rgba(0,0,0,0.15);
+    border-radius:8px;
+}
+.log p{
+    margin:6px 0;
+    padding:6px;
+    border-radius:6px;
+    background:rgba(255,255,255,0.02)
+}
+.system{
+    margin-top:8px;
+    color:#9aa6b2;
+    font-size:13px
+}
